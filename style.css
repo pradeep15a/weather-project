@@ -209,7 +209,7 @@ h1.temp {
   align-items: flex-end;
   justify-content: right;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
 }
 
 a{
@@ -219,6 +219,8 @@ a{
 
 .credits {
   text-decoration: none;
+  position: absolute;
+  padding-bottom: 0;
   color: black;
   margin-left: auto;
   font-weight: 700;
