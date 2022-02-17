@@ -24,7 +24,7 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Wind Speed: " + speed + " km/h";
-    document.querySelector(".weather").classList.remove("loading");
+    
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/800x400/?city " + name + "')";
     document.body.style.backgroundRepeat = "none";
@@ -33,7 +33,7 @@ let weather = {
     document.body.style.height = "100%";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-
+    document.querySelector(".weather").classList.remove("loading");
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
